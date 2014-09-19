@@ -207,6 +207,16 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\angular-mocks.js" />
+    <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min.js" />
+    <Content Include="Scripts\app\js\app.js" />
+    <Content Include="Scripts\app\js\gameService.js" />
+    <Content Include="Scripts\app\js\joinGameController.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\angular.min.js.map" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
     <Content Include="fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
@@ -267,6 +277,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Scripts\app\partials\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
