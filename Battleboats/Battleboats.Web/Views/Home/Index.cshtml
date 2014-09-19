@@ -2,59 +2,7 @@
     ViewBag.Title = "Home Page";
 }
 
-<div ng-app="BattleBoatsApp" ng-controller="joinGameController">
-    <div class="row">
-        <div class="col-md-4">
-            <h2>Join the game</h2>
-            <form role="form">
-                <div class="form-group">
-                    <label for="username">Username</label>
-                    <input name="username" id="username" ng-model="username" class="form-control" placeholder="Username" />
-                </div>
-                <button type="button" class="btn btn-primary" ng-click="joinGame()">Join</button>
-            </form>
-        </div>
-    </div>
-</div>
-@*<div class="row">
-    <div class="col-md-10 col-md-offset-1">
-        <div class="row bb-row">
-            <div class="col-md-1 bb-cell">
-                <span>A1</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A2</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-            <div class="col-md-1 bb-cell">
-                <span>A3</span>
-            </div>
-        </div>
-    </div>
-</div>*@
-@section Scripts {
-    <script src="~/Scripts/angular.js"></script>
-    <script src="~/Scripts/app/js/app.js"></script>
-    <script src="~/Scripts/app/js/joinGameController.js"></script>
-    <script src="~/Scripts/app/js/gameService.js"></script>
+@section scripts
+{
+    <script src="~/Scripts/angular.min.js"></script>
 }
