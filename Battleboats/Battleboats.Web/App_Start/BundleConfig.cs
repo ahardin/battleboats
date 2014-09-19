@@ -16,6 +16,7 @@ namespace Battleboats.Web
 
             bundles.Add(new ScriptBundle("~/bundles/battleboats").Include(
                 "~/Scripts/angular.js",
+                "~/Scripts/angular-signalr-hub.js",
                 "~/Scripts/app/js/*.js",
                 "~/Scripts/app/partials/*.js"));
 
