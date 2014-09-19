@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "Battleboats", "Battleboats\Battleboats.ccproj", "{0F1C511C-DCBB-42D3-84AD-A054ADB67C65}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleboats.Web", "Battleboats.Web\Battleboats.Web.csproj", "{E4EA7914-B6C5-48D2-AFDF-04DAD171E2E5}"
@@ -16,6 +14,16 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{009D56
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
+
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleboats.Infrastructure", "Battleboats.Infrastructure\Battleboats.Infrastructure.csproj", "{8175445C-B5A7-4C64-8A9F-021D5A882A67}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleboats.Application", "Battleboats.Application\Battleboats.Application.csproj", "{70B15A26-920A-41BB-9C65-A0848B53FEA8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Battleboats.Domain", "Battleboats.Domain\Battleboats.Domain.csproj", "{BF52862E-C0FC-448D-830A-9BA937693677}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{C5641812-2ABE-49F0-8A9D-DD32A1464426}"
+EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -34,6 +42,22 @@ Global
 		{AA553A58-81CD-4BDD-B23D-8322E93608BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA553A58-81CD-4BDD-B23D-8322E93608BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA553A58-81CD-4BDD-B23D-8322E93608BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8175445C-B5A7-4C64-8A9F-021D5A882A67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8175445C-B5A7-4C64-8A9F-021D5A882A67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8175445C-B5A7-4C64-8A9F-021D5A882A67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8175445C-B5A7-4C64-8A9F-021D5A882A67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70B15A26-920A-41BB-9C65-A0848B53FEA8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70B15A26-920A-41BB-9C65-A0848B53FEA8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70B15A26-920A-41BB-9C65-A0848B53FEA8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70B15A26-920A-41BB-9C65-A0848B53FEA8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF52862E-C0FC-448D-830A-9BA937693677}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF52862E-C0FC-448D-830A-9BA937693677}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF52862E-C0FC-448D-830A-9BA937693677}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF52862E-C0FC-448D-830A-9BA937693677}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5641812-2ABE-49F0-8A9D-DD32A1464426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5641812-2ABE-49F0-8A9D-DD32A1464426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5641812-2ABE-49F0-8A9D-DD32A1464426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5641812-2ABE-49F0-8A9D-DD32A1464426}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
