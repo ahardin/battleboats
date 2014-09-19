@@ -28,5 +28,13 @@ namespace Tests
             Assert.IsNotNull(game.GameId);
         }
 
+        [Test]
+        public void CreatingPlayerIsPlayerOne()
+        {
+            Player player1 = new Player();
+            var game = new Game(player1);
+
+            Assert.AreEqual(player1, game.PlayerOne);
+        }
     }
 }

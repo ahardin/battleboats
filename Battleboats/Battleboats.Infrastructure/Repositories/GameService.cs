@@ -9,7 +9,7 @@ namespace Battleboats.Infrastructure.Repositories
 {
     public interface IGameService
     {
-        Game New();
+        Game New(Guid creatingPlayerId);
         Game GetBy(Guid gameId);
         void Save(Game game);
     }
