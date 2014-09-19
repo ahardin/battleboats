@@ -1,41 +1,44 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Battleboats.Domain
 {
     public class Game
     {
+        public Game(Player creatingPlayer)
+        {
+            GameId = new Guid();
+            PlayerOne = creatingPlayer;
+            AvailableShips = new List<Ship>
+                {
+                    new Ship {Id = 1, Name = "Aircraft Carrier", Size = 5},
+                    new Ship {Id = 2, Name = "Battleship", Size = 4},
+                    new Ship {Id = 3, Name = "Submarine", Size = 3},
+                    new Ship {Id = 4, Name = "Destroyer", Size = 3},
+                    new Ship {Id = 5, Name = "Patrol Boat", Size = 2},
+                };
+        }
+
         public Guid GameId { get; set; }
 
         public Player PlayerOne { get; set; }
         public Player PlayerTwo { get; set; }
 
-        public List<Ship> AvailableShips
-        {
-            get
-            {
-                return new List<Ship>
-                    {
-                        new Ship() {Id = 1, Name = "Aircraft Carrier", Size = 5},
-                        new Ship() {Id = 2, Name = "Battleship", Size = 4},
-                        new Ship() {Id = 3, Name = "Submarine", Size = 3},
-                        new Ship() {Id = 4, Name = "Destroyer", Size = 3},
-                        new Ship() {Id = 5, Name = "Patrol Boat", Size = 2},
-                    };
-            }
-        }
+        public List<Ship> AvailableShips { get; set; }
 
         public ShotResult FireShot(Guid shootingPlayerId, Coordinate coords)
         {
             throw new NotImplementedException();
         }
 
-        public bool SetShip(Guid shootingPlayerId, Ship ship)
+        public AddShipResult SetShip(Guid playerId, Ship ship)
         {
             throw new NotImplementedException();   
+        }
+
+        public bool Join(Player player)
+        {
+            throw new NotImplementedException();
         }
     }
 
@@ -43,6 +46,12 @@ namespace Battleboats.Domain
     {
         public bool WasHit { get; set; }
         public bool EndsGame { get; set; }
+    }
+
+    public class AddShipResult
+    {
+        public bool ShipWasAdded { get; set; }
+        public bool CanGameStart { get; set; }
     }
 
     public class Player

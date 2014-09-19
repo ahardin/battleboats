@@ -9,12 +9,24 @@ namespace Tests
     public class CreateGameTests
     {
 
-        [Test]
-        public void GameContainsAllShips()
+        [TestCase("Battleship")]
+        [TestCase("Aircraft Carrier")]
+        [TestCase("Patrol Boat")]
+        [TestCase("Destroyer")]
+        [TestCase("Submarine")]
+        public void GameContainsAvailableShip(string shipName)
         {
-            var game = new Game();
-
-            Assert.AreEqual(5, game.AvailableShips.Count);
+            var game = new Game(new Player());
+            Assert.That(game.AvailableShips.Any(s=> s.Name == shipName));
         }
+
+        [Test]
+        public void GenerateGameId()
+        {
+            var game = new Game(new Player());
+
+            Assert.IsNotNull(game.GameId);
+        }
+
     }
 }
